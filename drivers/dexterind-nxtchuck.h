@@ -1,0 +1,5 @@
+bool NXTChuckReadClassicController(tSensors link, tClassicCtrl &controller)
+bool NXTChuckreadIdent(tSensors link, tNunchuck &nunchuck)
+bool NXTChuckreadSensor(tSensors link, tNunchuck &nunchuck)
+bool _NXTChuckInit(tSensors link)
+bool __NXTChuckReadRaw(tSensors link, ubyte _reg, tByteArray &data)

@@ -1,0 +1,6 @@
+bool MSPFMcontrolMotorA(tSensors link, byte chan, byte motor_op, byte motor_speed, ubyte address = MSPFM_I2C_ADDR)
+bool MSPFMcontrolMotorA(tSensors link, byte chan, byte motor_op, byte motor_speed, ubyte address)
+bool MSPFMcontrolMotorAB(tSensors link, byte chan, byte motorA_op, byte motorA_speed, byte motorB_op, byte motorB_speed, ubyte address = MSPFM_I2C_ADDR)
+bool MSPFMcontrolMotorAB(tSensors link, byte chan, byte motorA_op, byte motorA_speed, byte motorB_op, byte motorB_speed, ubyte address)
+bool MSPFMcontrolMotorB(tSensors link, byte chan, byte motor_op, byte motor_speed, ubyte address = MSPFM_I2C_ADDR)
+bool MSPFMcontrolMotorB(tSensors link, byte chan, byte motor_op, byte motor_speed, ubyte address)

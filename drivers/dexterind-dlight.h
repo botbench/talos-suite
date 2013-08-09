@@ -1,0 +1,7 @@
+bool DLIGHTdisable(tSensors link, ubyte addr)
+bool DLIGHTinit(tSensors link, ubyte addr)
+bool DLIGHTsetBlinking(tSensors link, ubyte addr, float BlinkRate, long DutyCycle)
+bool DLIGHTsetColor(tSensors link, ubyte addr, ubyte r, ubyte g, ubyte b)
+bool DLIGHTsetExternal(tSensors link, ubyte addr, ubyte external)
+bool DLIGHTstartBlinking(tSensors link, ubyte addr)
+bool DLIGHTstopBlinking(tSensors link, ubyte addr)

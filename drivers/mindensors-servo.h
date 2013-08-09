@@ -1,0 +1,7 @@
+bool NXTServoQSetPos(tSensors link, ubyte servochan, ubyte position, byte speed, ubyte address = NXTSERVO_I2C_ADDR)
+bool NXTServoQSetPos(tSensors link, ubyte servochan, ubyte position, byte speed, ubyte address)
+bool NXTServoSetPos(tSensors link, ubyte servochan, int position, ubyte speed, ubyte address = NXTSERVO_I2C_ADDR)
+bool NXTServoSetPos(tSensors link, ubyte servochan, int position, ubyte speed, ubyte address)
+bool NXTServoSetSpeed(tSensors link, ubyte servochan, ubyte speed, ubyte address)
+int NXTServoReadVoltage(tSensors link, ubyte address = NXTSERVO_I2C_ADDR)
+int NXTServoReadVoltage(tSensors link, ubyte address)

@@ -1,0 +1,8 @@
+bool HTSPBreadAllADC(tSensors link, int &adch0, int &adch1, int &adch2, int &adch3, byte width)
+bool HTSPBreadAllADC(tSensors link, int &adch0, int &adch1, int &adch2, int &adch3, int &adch4, byte width)
+bool HTSPBsetSamplingTime(tSensors link, byte interval)
+bool HTSPBsetupIO(tSensors link, ubyte mask)
+bool HTSPBwriteAnalog(tSensors link, byte dac, byte mode, int freq, int volt)
+bool HTSPBwriteIO(tSensors link, ubyte mask)
+int HTSPBreadADC(tSensors link, byte channel, byte width)
+ubyte HTSPBreadIO(tSensors link, ubyte mask)

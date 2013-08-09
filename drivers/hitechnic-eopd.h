@@ -1,0 +1,8 @@
+int HTEOPDreadProcessed(tMUXSensor muxsensor)
+int HTEOPDreadProcessed(tSensors link)
+int HTEOPDreadRaw(tMUXSensor muxsensor)
+int HTEOPDreadRaw(tSensors link)
+void HTEOPDsetLongRange(tMUXSensor muxsensor)
+void HTEOPDsetLongRange(tSensors link)
+void HTEOPDsetShortRange(tMUXSensor muxsensor)
+void HTEOPDsetShortRange(tSensors link)

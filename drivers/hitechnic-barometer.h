@@ -1,0 +1,5 @@
+float HTBMreadPsi(tSensors link)
+float HTBMreadTemp(tSensors link)
+float HTBMreadTempF(tSensors link)
+float HTBMreadhPa(tSensors link)
+long HTBMreadMInHg(tSensors link)

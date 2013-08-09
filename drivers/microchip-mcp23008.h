@@ -1,0 +1,7 @@
+bool MCP23008setupIO(tSensors link, byte addr, byte mask)
+bool MCP23008setupIO(tSensors link, byte addr, byte mask, byte pullup)
+bool MCP23008writeIO(tSensors link, byte addr, byte mask)
+bool MCP23008writeReg(tSensors link, byte addr, byte reg, byte data)
+byte MCP23008readIO(tSensors link, byte addr)
+byte MCP23008readIO(tSensors link, byte addr, byte mask)
+byte MCP23008readReg(tSensors link, byte addr, byte reg)

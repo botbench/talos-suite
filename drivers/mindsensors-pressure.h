@@ -1,0 +1,8 @@
+bool MSPPSsendCmd(tSensors link, ubyte command)
+bool MSPPSsetRefPressure(tSensors link)
+bool MSPPSsetRefPressure(tSensors link, int refpressure)
+bool MSPPSsetUnit(tSensors link, ubyte unit)
+long MSPPSreadAbsPressure(tSensors link)
+long MSPPSreadGaugePressure(tSensors link)
+long MSPPSreadPressure(tSensors link, ubyte reg)
+long MSPPSreadRefPressure(tSensors link)

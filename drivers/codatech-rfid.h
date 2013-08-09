@@ -1,0 +1,7 @@
+bool CTRFIDinit(tSensors link)
+bool CTRFIDreadTransponder(tSensors link, string &transponderID)
+bool CTRFIDsetContinuous(tSensors link)
+bool CTRFIDsetSingleShot(tSensors link)
+bool _CTRFIDreadStatus(tSensors link, ubyte &_status)
+bool _CTRFIDsendCommand(tSensors link, ubyte command)
+bool _CTRFIDsendDummy(tSensors link)

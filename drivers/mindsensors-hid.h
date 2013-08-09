@@ -1,0 +1,6 @@
+bool MSHIDsendCommand(tSensors link, byte command, ubyte address = MSHID_I2C_ADDR)
+bool MSHIDsendCommand(tSensors link, byte command, ubyte address)
+bool MSHIDsendKeyboardData(tSensors link, byte modifier, byte keybdata, ubyte address = MSHID_I2C_ADDR)
+bool MSHIDsendKeyboardData(tSensors link, byte modifier, byte keybdata, ubyte address)
+bool MSHIDsendString(tSensors link, string data, ubyte address = MSHID_I2C_ADDR)
+bool MSHIDsendString(tSensors link, string data, ubyte address)

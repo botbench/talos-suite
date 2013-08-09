@@ -1,0 +1,8 @@
+float HTGYROreadCal(tMUXSensor muxsensor)
+float HTGYROreadCal(tSensors link)
+float HTGYROreadRot(tMUXSensor muxsensor)
+float HTGYROreadRot(tSensors link)
+float HTGYROstartCal(tMUXSensor muxsensor)
+float HTGYROstartCal(tSensors link)
+void HTGYROsetCal(tMUXSensor muxsensor, int offset)
+void HTGYROsetCal(tSensors link, int offset)

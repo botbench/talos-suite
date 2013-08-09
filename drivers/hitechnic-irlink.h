@@ -1,0 +1,8 @@
+void PFMotor(tPFmotor pfmotor, ePWMMotorCommand _motorCmd)
+void PFcomboDirectMode(tSensors link, int channel, eCDMMotorCommand _motorB, eCDMMotorCommand _motorA)
+void PFcomboPwmMode(tSensors link, int channel, ePWMMotorCommand _motorB, ePWMMotorCommand _motorA)
+void PFsinglePinOutputMode(tSensors link, ubyte channel, ubyte _motor, ePWMMotorCommand _motorCmd)
+void debugIR(tByteArray &data)
+void decToBin(int number, int length, string &output)
+void encodeBuffer(tByteArray &iBuffer, tByteArray &oBuffer)
+void transmitIR(tSensors link, tByteArray &oBuffer, int channel)

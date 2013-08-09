@@ -1,0 +1,8 @@
+bool DIMCinit(tSensors link)
+bool DIMCinit(tSensors link, ubyte range, bool lpfenable=true)
+bool DIMCreadAxes(tSensors link, int &_x, int &_y, int &_z)
+float DIMCreadHeading(tSensors link)
+void DIMCstartCal(tSensors link)
+void DIMCstopCal(tSensors link)
+void _DIMCreadCalVals()
+void _DIMCwriteCalVals()

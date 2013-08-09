@@ -1,0 +1,7 @@
+bool PSPV4readButtonPressure(tSensors link, tPSP &controllerState, ubyte address = PSPV4_I2C_ADDR)
+bool PSPV4readButtons(tSensors link, tPSP &controllerState, ubyte address = PSPV4_I2C_ADDR)
+bool _PSPV4init(tSensors link, ubyte address = PSPV4_I2C_ADDR)
+byte PSPV4readRefSignal(tSensors link, ubyte address = PSPV4_I2C_ADDR)
+byte PSPV4readRefSignalCount(tSensors link, ubyte address = PSPV4_I2C_ADDR)
+byte PSPV4readRefTXType(tSensors link, ubyte address = PSPV4_I2C_ADDR)
+long PSPV4readRawRefTXValue(tSensors link, ubyte address = PSPV4_I2C_ADDR)
