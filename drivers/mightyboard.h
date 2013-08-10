@@ -1,7 +1,0 @@
-int readSensor(byte _channel)
-int readSensor(byte _channel, byte _precision)
-int readSensor(tSensors _link, byte _channel)
-int readSensor(tSensors _link, byte _channel, byte _precision)
-void enableSensors(byte _mask)
-void enableSensors(tSensors _link, byte _mask)
-void initBoard(tSensors _link)

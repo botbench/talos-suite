@@ -1,6 +1,9 @@
 #ifndef __COMMON_H__
 #define __COMMON_H__
 
+#include <sensor.h>
+#include <i2c.h>
+
 #undef __COMMON_H_DEBUG__
 //#define __COMMON_H_DEBUG__
 
@@ -45,12 +48,12 @@ typedef enum {
  * Array of bytes as a struct, this is a work around for RobotC's inability to pass an array to
  * a function.
  */
-typedef uint8_t tByteArray[MAX_ARR_SIZE];
-typedef int8_t tsByteArray[MAX_ARR_SIZE];
-typedef uint8_t tMassiveArray[128];             /*!< 128 byte array for very large blobs of data */
-typedef uint8_t tHugeByteArray[64];             /*!< 64 byte array for very large blobs of data */
-typedef uint8_t tBigByteArray[32];              /*!< 32 byte array for large blobs of data */
-typedef uint8_t tIPaddr[4];                     /*!< Struct for holding an IP address */
+typedef char tByteArray[MAX_ARR_SIZE];
+typedef char tsByteArray[MAX_ARR_SIZE];
+typedef char tMassiveArray[128];             /*!< 128 byte array for very large blobs of data */
+typedef char tHugeByteArray[64];             /*!< 64 byte array for very large blobs of data */
+typedef char tBigByteArray[32];              /*!< 32 byte array for large blobs of data */
+typedef char tIPaddr[4];                     /*!< Struct for holding an IP address */
 
 /**
  * Array of ints as a struct, this is a work around for RobotC's inability to pass an array to

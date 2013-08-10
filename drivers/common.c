@@ -18,8 +18,6 @@
 
 #include <stdio.h>
 #include <stdint.h>
-#include <sensor.h>
-#include <i2c.h>
 #include "common.h"
 
 /**
