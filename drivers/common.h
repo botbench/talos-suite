@@ -35,12 +35,18 @@
  */
 #define clip(a, b, c) min2(c, max2(b, a))
 
+typedef enum {
+    true = 0,
+    false = 1,
+} bool;
+
+
 /**
  * Array of bytes as a struct, this is a work around for RobotC's inability to pass an array to
  * a function.
  */
 typedef uint8_t tByteArray[MAX_ARR_SIZE];
-typedef sbyte tsByteArray[MAX_ARR_SIZE];
+typedef int8_t tsByteArray[MAX_ARR_SIZE];
 typedef uint8_t tMassiveArray[128];             /*!< 128 byte array for very large blobs of data */
 typedef uint8_t tHugeByteArray[64];             /*!< 64 byte array for very large blobs of data */
 typedef uint8_t tBigByteArray[32];              /*!< 32 byte array for large blobs of data */
@@ -52,11 +58,6 @@ typedef uint8_t tIPaddr[4];                     /*!< Struct for holding an IP ad
  */
 typedef int tIntArray[MAX_ARR_SIZE];
 
-bool waitForI2CBus(tSensors link)
-bool writeI2C(tSensors link, tByteArray &request)
-bool writeI2C(tSensors link, tByteArray &request, tByteArray &reply, int replylen)
-long getUID()
-void clearI2CError(tSensors link, uint8_t address)
-void clearI2Cbus(tSensors link)
+bool writeI2C(sensor_port_t *link, char *request, char *reply, uint8_t replylen);
 
 #endif // __COMMON_H__
