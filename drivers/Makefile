@@ -1,13 +1,26 @@
-INCLUDES=-I/home/talos/sensorDev/include
-FLAGS=-fPIC -D_FILE_OFFSET_BITS=64
+program_NAME := driversuite.so
+program_C_SRCS := hitechnic-compass.c common.c
+# program_C_SRCS := $(wildcard *.c)
+program_C_OBJS := ${program_C_SRCS:.c=.o}
+program_OBJS := $(program_C_OBJS) 
+program_INCLUDE_DIRS := /home/talos/sensorDev/include
+program_LIBRARY_DIRS :=
+program_LIBRARIES :=
 
-hitechnic-compass.o:
-	gcc $(FLAGS) $(INCLUDES) -shared hitechnic-compass.c -o hitechnic-compass.o
-	
-common.o:
-	gcc $(FLAGS) $(INCLUDES) -shared common.c -o common.o
+CPPFLAGS +=-fPIC -D_FILE_OFFSET_BITS=64 -shared
+CPPFLAGS += $(foreach includedir,$(program_INCLUDE_DIRS),-I$(includedir))
+LDFLAGS += $(foreach librarydir,$(program_LIBRARY_DIRS),-L$(librarydir))
+LDFLAGS += $(foreach library,$(program_LIBRARIES),-l$(library))
 
-all: common.o hitechnic-compass.o
+.PHONY: all clean distclean
+
+all: $(program_NAME)
+
+$(program_NAME): $(program_OBJS)
+	$(LINK.c) $(program_OBJS) -o $(program_NAME)
 
 clean:
-	rm -f *.o
+	@- $(RM) $(program_NAME)
+	@- $(RM) $(program_OBJS)
+
+distclean: clean
